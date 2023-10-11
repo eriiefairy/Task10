@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bands</title>
+</head>
+<body>
+    <h1>Bands</h1>
+    {% for band in bands %}
+      <h2>{{ band.name }}</h2>
+      <p>{{ band.description }}</p>
+    {% endfor %}
+
+    <p><a href="{% url 'home' %}">Home</a></p>
+</body>
+</html>
